@@ -27,8 +27,8 @@ INSERT INTO stores (avatar, bio, cover, created_at, e_wallet, featured_images, i
 
 -- Sample Cart data
 INSERT INTO cart (created_at, updated_at, store_id, user_id) VALUES
-    ('2023-11-24 14:00:00', '2023-11-24 14:00:00', 3, 1),
-    ('2023-11-24 15:30:00', '2023-11-24 15:30:00', 4, 2)
+    ('2023-11-24 14:00:00', '2023-11-24 14:00:00', 1, 1),
+    ('2023-11-24 15:30:00', '2023-11-24 15:30:00', 2, 2)
     -- Add more cart records as needed
     ;
     
@@ -44,11 +44,11 @@ INSERT INTO category (_id, created_at, image, is_deleted, name, slug, updated_at
 -- Add more rows as needed
 
 INSERT INTO product (_id, created_at, description, is_active, is_selling, list_images, name, price, promotional_price, quantity, rating, slug, sold, updated_at, category_id, store_id) VALUES
-    (1, '2023-11-24 08:00:00', 'High-performance running shoes for all terrains.', 1, 1, null, 'Running Shoes 1', 99.99, 79.99, 50, 4, 'running-shoes-1', 200, '2023-11-24 08:00:00', 1, 3),
-    (2, '2023-11-24 09:30:00', 'Casual sneakers with stylish design.', 1, 1, null, 'Sneakers 1', 59.99, 49.99, 100, 5, 'sneakers-1', 150, '2023-11-24 09:30:00', 2, 3),
-    (3, '2023-11-24 10:45:00', 'Comfortable sandals for summer.', 1, 1, null, 'Summer Sandals 1', 39.99, 34.99, 75, 4, 'summer-sandals-1', 120, '2023-11-24 10:45:00', 3, 4),
-    (4, '2023-11-24 12:15:00', 'Classic leather dress shoes for formal occasions.', 1, 1, null, 'Dress Shoes 1', 79.99, 69.99, 30, 4, 'dress-shoes-1', 80, '2023-11-24 12:15:00', 4, 4),
-    (5, '2023-11-24 14:00:00', 'Athletic shoes with ankle support for sports.', 1, 1, null, 'Sports Shoes 1', 119.99, 99.99, 40, 5, 'sports-shoes-1', 100, '2023-11-24 14:00:00', 1, 4);
+    (1, '2023-11-24 08:00:00', 'High-performance running shoes for all terrains.', 1, 1, null, 'Running Shoes 1', 99.99, 79.99, 50, 4, 'running-shoes-1', 200, '2023-11-24 08:00:00', 1, 1),
+    (2, '2023-11-24 09:30:00', 'Casual sneakers with stylish design.', 1, 1, null, 'Sneakers 1', 59.99, 49.99, 100, 5, 'sneakers-1', 150, '2023-11-24 09:30:00', 2, 2),
+    (3, '2023-11-24 10:45:00', 'Comfortable sandals for summer.', 1, 1, null, 'Summer Sandals 1', 39.99, 34.99, 75, 4, 'summer-sandals-1', 120, '2023-11-24 10:45:00', 3, 1),
+    (4, '2023-11-24 12:15:00', 'Classic leather dress shoes for formal occasions.', 1, 1, null, 'Dress Shoes 1', 79.99, 69.99, 30, 4, 'dress-shoes-1', 80, '2023-11-24 12:15:00', 4, 2),
+    (5, '2023-11-24 14:00:00', 'Athletic shoes with ankle support for sports.', 1, 1, null, 'Sports Shoes 1', 119.99, 99.99, 40, 5, 'sports-shoes-1', 100, '2023-11-24 14:00:00', 1, 2);
 
 -- Sample Data for the 'delivery' Table with Columns: _id, created_at, description, is_deleted, name, price, updated_at
 
