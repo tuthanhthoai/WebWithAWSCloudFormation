@@ -8,7 +8,6 @@ import javax.validation.Valid;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -49,7 +48,7 @@ public class OrderController {
 	private DeliveryService deliveryService;
 	
 	@PostMapping("add")
-	public ModelAndView MakeOrder(ModelMap model,  @Valid @ModelAttribute("cartitem") List<Long> cartItem,@Valid @ModelAttribute("order") OrderModel order, BindingResult result, HttpSession session) throws JSONException
+	public ModelAndView MakeOrder(ModelMap model,  @Valid @ModelAttribute("cartitem") List<Long> cartItem,@Valid @ModelAttribute("order") OrderModel order, BindingResult result, HttpSession session)
 	{	
 		User user = (User) session.getAttribute("user");
 		

@@ -11,9 +11,9 @@ import com.webproject.entity.Cart;
 
 @Repository
 public interface CartRepo extends JpaRepository<Cart, Long> {
-	@Query(value = "Select * from Cart where user_id=?1 and store_id = ?2", nativeQuery = true)
+	@Query(value = "Select * from carts where user_id=?1 and store_id = ?2", nativeQuery = true)
 	Optional<Cart> findCartByUserIdAndStoreId(Long userId, Long storeId);
 	
-	@Query(value = "SELECT _id FROM Cart WHERE user_id = ? GROUP BY _id", nativeQuery = true)
+	@Query(value = "SELECT _id FROM carts WHERE user_id = ? GROUP BY _id", nativeQuery = true)
 	List<Long> getAllCartIdOfUser(Long userId);
 }

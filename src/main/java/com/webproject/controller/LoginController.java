@@ -7,7 +7,6 @@ import org.apache.tomcat.util.bcel.Const;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -35,7 +34,7 @@ public class LoginController {
 		return "login/login";
 	}
 	@PostMapping("login")
-	public ModelAndView login(ModelMap model, @Valid @ModelAttribute("user") UserModel user, BindingResult result, HttpSession session) throws JSONException
+	public ModelAndView login(ModelMap model, @Valid @ModelAttribute("user") UserModel user, BindingResult result, HttpSession session)
 	{	
 		String message = "";
 		if(result.hasErrors()) {	

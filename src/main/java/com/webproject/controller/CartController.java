@@ -8,7 +8,6 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -97,12 +96,12 @@ public class CartController {
 			cartitemService.save(cartItem);			
 		}
 		
-		return ResponseEntity.ok("thanhf coong");
+		return ResponseEntity.ok("Success");
 
 	}
 	
 	@PostMapping("delete")
-	public ModelAndView DeleteCartItem(ModelMap model,  @Valid @ModelAttribute("cartitem") List<Long> cartItem, BindingResult result) throws JSONException
+	public ModelAndView DeleteCartItem(ModelMap model,  @Valid @ModelAttribute("cartitem") List<Long> cartItem, BindingResult result)
 	{	
 		System.err.println(cartItem);
 		List<CartItem> cartItems = new ArrayList<>(); 

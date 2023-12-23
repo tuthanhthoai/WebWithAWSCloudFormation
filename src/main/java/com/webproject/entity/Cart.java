@@ -28,7 +28,7 @@ import lombok.Setter;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "Cart")
+@Table(name = "Carts")
 public class Cart implements Serializable {
 	/**
 	 * 
