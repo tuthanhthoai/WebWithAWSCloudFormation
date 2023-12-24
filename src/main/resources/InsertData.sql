@@ -26,7 +26,7 @@ INSERT INTO stores (avatar, bio, cover, created_at, e_wallet, featured_images, i
     ;
 
 -- Sample Cart data
-INSERT INTO cart (created_at, updated_at, store_id, user_id) VALUES
+INSERT INTO carts (created_at, updated_at, store_id, user_id) VALUES
     ('2023-11-24 14:00:00', '2023-11-24 14:00:00', 1, 1),
     ('2023-11-24 15:30:00', '2023-11-24 15:30:00', 2, 2)
     -- Add more cart records as needed
